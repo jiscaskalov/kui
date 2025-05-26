@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "kui",
+  "version": "${version}",
+
+  "name": "Kui",
+  "description": "",
+  "authors": ["jiscaskalov"],
+  "contact": {},
+
+  "license": "GPL-3.0",
+  "icon": "assets/kui/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.jsco.kui.Kui"]
+  },
+
+  "mixins": [
+    "kui.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
